@@ -1,7 +1,7 @@
 // Content script - Tracks user browsing across YouTube, Twitter, Reddit
 // Runs on every page matching the manifest patterns
 
-console.log('🎯 Dialectical Recommender: Content script loaded');
+console.log(' Dialectical Recommender: Content script loaded');
 
 // Detect platform
 const currentUrl = window.location.href;

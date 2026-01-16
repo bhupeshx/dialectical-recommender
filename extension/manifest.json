@@ -7,17 +7,18 @@
     "storage",
     "tabs",
     "activeTab",
-    "webNavigation"
+    "webNavigation",
+    "unlimitedStorage" 
   ],
   "host_permissions": [
     "https://www.youtube.com/*",
     "https://twitter.com/*",
     "https://x.com/*",
-    "https://www.reddit.com/*",
-    "https://*/*"
+    "https://www.reddit.com/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module" 
   },
   "content_scripts": [
     {
@@ -33,11 +34,5 @@
   ],
   "action": {
     "default_popup": "popup.html"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["data/*"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }
