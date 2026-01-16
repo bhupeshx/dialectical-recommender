@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialectical Recommender</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 350px;
+      min-height: 400px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    
+    .subtitle {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+    
+    .stats-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    
+    .stat-label {
+      opacity: 0.9;
+    }
+    
+    .stat-value {
+      font-weight: bold;
+    }
+    
+    .echo-score {
+      text-align: center;
+      margin: 15px 0;
+    }
+    
+    .echo-score-value {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    
+    .echo-score-label {
+      font-size: 12px;
+      opacity: 0.9;
+      margin-top: 5px;
+    }
+    
+    .progress-bar {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      height: 20px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      display: flex;
+      font-size: 11px;
+      font-weight: bold;
+    }
+    
+    .progress-left {
+      background: #3b82f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .progress-center {
+      background: #6b7280;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .progress-right {
+      background: #ef4444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 10px;
+    }
+    
+    .button-primary {
+      background: white;
+      color: #667eea;
+    }
+    
+    .button-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+    
+    .button-secondary:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+    }
+    
+    .platform-icons {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0;
+      font-size: 12px;
+    }
+    
+    .platform-icon {
+      text-align: center;
+    }
+    
+    .platform-count {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🎯 Dialectical Recommender</h1>
+    <p class="subtitle">Breaking Echo Chambers</p>
+  </div>
+  
+  <div id="loading" class="loading">
+    <p>Loading your data...</p>
+  </div>
+  
+  <div id="content" style="display: none;">
+    <div class="stats-container">
+      <div class="echo-score">
+        <div class="echo-score-value" id="echoScore">--</div>
+        <div class="echo-score-label">Echo Chamber Score</div>
+      </div>
+      
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressBar"></div>
+      </div>
+      
+      <div class="stat-row">
+        <span class="stat-label">📊 Total Items Tracked:</span>
+        <span class="stat-value" id="totalItems">0</span>
+      </div>
+    </div>
+    
+    <div class="platform-icons">
+      <div class="platform-icon">
+        <div>📺</div>
+        <div class="platform-count" id="youtubeCount">0</div>
+        <div>YouTube</div>
+      </div>
+      <div class="platform-icon">
+        <div>🐦</div>
+        <div class="platform-count" id="twitterCount">0</div>
+        <div>Twitter</div>
+      </div>
+      <div class="platform-icon">
+        <div>📱</div>
+        <div class="platform-count" id="redditCount">0</div>
+        <div>Reddit</div>
+      </div>
+    </div>
+    
+    <button class="button button-primary" id="openDashboard">
+      📊 Open Full Dashboard
+    </button>
+    
+    <button class="button button-secondary" id="exportData">
+      💾 Export Data (JSON)
+    </button>
+    
+    <button class="button button-secondary" id="clearData">
+      🗑️ Clear All Data
+    </button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "generated": "2025-01-01T00:00:00Z",
+    "user_profile": "IIT Ropar student interested in educational content, geopolitics, critical thinking",
+    "tracking_period": "7 days",
+    "platforms": ["youtube", "twitter", "reddit"],
+    "total_items": 156
+  },
+  "summary_stats": {
+    "echo_chamber_score": 54,
+    "ideology_distribution": {
+      "center_left": 48,
+      "center": 31,
+      "center_right": 21
+    },
+    "platform_breakdown": {
+      "youtube": 67,
+      "twitter": 72,
+      "reddit": 17
+    }
+  },
+  "tracked_content": [
+    {
+      "id": "yt_001",
+      "platform": "youtube",
+      "timestamp": "2025-01-01T10:23:00Z",
+      "videoId": "dQw4w9WgXcQ",
+      "title": "Why India's Economy is Actually Struggling - Explained",
+      "channel": "Johnny Harris",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "ideology": -0.5,
+      "ideologyLabel": "center-left",
+      "watchTime": 18
+    },
+    {
+      "id": "yt_002",
+      "platform": "youtube",
+      "timestamp": "2025-01-01T14:45:00Z",
+      "videoId": "abc123xyz",
+      "title": "Sidemen $100 vs $10,000 Holiday",
+      "channel": "Sidemen",
+      "url": "https://www.youtube.com/watch?v=abc123xyz",
+      "ideology": 0.0,
+      "ideologyLabel": "center",
+      "watchTime": 25
+    },
+    {
+      "id": "tw_001",
+      "platform": "twitter",
+      "timestamp": "2025-01-01T11:15:00Z",
+      "text": "India's farmers' protests reveal deep structural issues with agricultural reform. Thread on why MSP matters and what economists are missing:",
+      "author": "@scroll_in",
+      "url": "https://twitter.com/scroll_in/status/123456789",
+      "ideology": -0.4,
+      "ideologyLabel": "center-left"
+    },
+    {
+      "id": "tw_002",
+      "platform": "twitter",
+      "timestamp": "2025-01-01T16:30:00Z",
+      "text": "Breaking: India's GDP growth revised to 6.8% for Q3. Mixed signals from manufacturing and services sectors.",
+      "author": "@BloombergIndia",
+      "url": "https://twitter.com/BloombergIndia/status/987654321",
+      "ideology": 0.0,
+      "ideologyLabel": "center"
+    },
+    {
+      "id": "rd_001",
+      "platform": "reddit",
+      "timestamp": "2025-01-01T19:00:00Z",
+      "title": "Is Tata Motors a good long-term investment? Due diligence inside",
+      "subreddit": "r/IndiaInvestments",
+      "url": "https://reddit.com/r/IndiaInvestments/comments/abc123",
+      "ideology": 0.0,
+      "ideologyLabel": "center"
+    },
+    {
+      "id": "yt_003",
+      "platform": "youtube",
+      "timestamp": "2025-01-02T09:30:00Z",
+      "videoId": "def456ghi",
+      "title": "Thomas Sowell: Economic Facts vs Political Myths",
+      "channel": "Hoover Institution",
+      "url": "https://www.youtube.com/watch?v=def456ghi",
+      "ideology": 0.6,
+      "ideologyLabel": "center-right",
+      "watchTime": 30
+    },
+    {
+      "id": "yt_004",
+      "platform": "youtube",
+      "timestamp": "2025-01-02T13:00:00Z",
+      "videoId": "jkl789mno",
+      "title": "How Quantum Computing Will Change Everything",
+      "channel": "Veritasium",
+      "url": "https://www.youtube.com/watch?v=jkl789mno",
+      "ideology": 0.0,
+      "ideologyLabel": "center",
+      "watchTime": 22
+    },
+    {
+      "id": "tw_003",
+      "platform": "twitter",
+      "timestamp": "2025-01-02T15:45:00Z",
+      "text": "Why India's economic liberalization in the 90s worked, and why we need more of it now. A data-driven thread:",
+      "author": "@EconomicFreedomIN",
+      "url": "https://twitter.com/EconomicFreedomIN/status/111222333",
+      "ideology": 0.5,
+      "ideologyLabel": "center-right"
+    },
+    {
+      "id": "yt_005",
+      "platform": "youtube",
+      "timestamp": "2025-01-03T10:00:00Z",
+      "videoId": "pqr012stu",
+      "title": "The Real Reason China is Scared of India",
+      "channel": "TLDR News",
+      "url": "https://www.youtube.com/watch?v=pqr012stu",
+      "ideology": -0.3,
+      "ideologyLabel": "center-left",
+      "watchTime": 12
+    },
+    {
+      "id": "rd_002",
+      "platform": "reddit",
+      "timestamp": "2025-01-03T18:20:00Z",
+      "title": "Which wireless headphones under ₹5000 actually last more than a year?",
+      "subreddit": "r/headphones",
+      "url": "https://reddit.com/r/headphones/comments/def456",
+      "ideology": 0.0,
+      "ideologyLabel": "center"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec_001",
+      "title": "Free Market Solutions to Healthcare Crisis",
+      "source": "Cato Institute",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=example1",
+      "steel_man_score": 8.3,
+      "ideology": "center-right",
+      "reason": "Data-driven analysis of market-based healthcare reform. Uses international comparisons, acknowledges trade-offs, credible libertarian think tank.",
+      "recommended_for": "Users consuming mostly center-left healthcare content",
+      "clicked": false
+    },
+    {
+      "id": "rec_002",
+      "title": "Why Government Spending Doesn't Create Jobs - An Economic Perspective",
+      "source": "Learn Liberty",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=example2",
+      "steel_man_score": 7.9,
+      "ideology": "center-right",
+      "reason": "Short educational video explaining crowding-out effect. Uses clear examples, avoids partisan language, economically rigorous.",
+      "recommended_for": "Users consuming progressive economic content",
+      "clicked": true
+    },
+    {
+      "id": "rec_003",
+      "title": "The Case for Color-Blind Policies - Coleman Hughes",
+      "source": "Coleman Hughes Podcast",
+      "platform": "podcast",
+      "url": "https://podcasts.example.com/coleman-hughes/ep123",
+      "steel_man_score": 8.9,
+      "ideology": "center",
+      "reason": "Nuanced argument against race-based policies from Black intellectual. Data-focused, charitable to opposing views, backed by peer-reviewed research.",
+      "recommended_for": "Users consuming mostly identity politics content",
+      "clicked": true
+    }
+  ],
+  "daily_stats": {
+    "2025-01-01": {
+      "youtube": 2,
+      "twitter": 2,
+      "reddit": 1,
+      "leftCount": 2,
+      "centerCount": 2,
+      "rightCount": 1,
+      "echoScore": 58
+    },
+    "2025-01-02": {
+      "youtube": 2,
+      "twitter": 1,
+      "reddit": 0,
+      "leftCount": 1,
+      "centerCount": 1,
+      "rightCount": 1,
+      "echoScore": 52
+    },
+    "2025-01-03": {
+      "youtube": 1,
+      "twitter": 0,
+      "reddit": 1,
+      "leftCount": 1,
+      "centerCount": 1,
+      "rightCount": 0,
+      "echoScore": 55
+    }
+  }
+}
